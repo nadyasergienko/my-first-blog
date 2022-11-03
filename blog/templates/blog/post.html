@@ -1,0 +1,15 @@
+<div class="card">
+    <div class="card-body">
+      <div class="post">
+  
+        <h1><a href="{% url 'post_detail' pk=post.pk%}">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaksbr }}</p>
+      </div>
+      <a class="btn btn-primary" href="{% url 'post_edit' pk=post.pk %}">
+        <i class="bi-pencil-square"></i></a>
+      <div class="date">
+        {{ post.published_date }}
+      </div>
+    </div>
+  </div>
+  
