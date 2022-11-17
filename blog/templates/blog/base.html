@@ -33,8 +33,8 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page">{{user.get_username}}</a>
             </li>
-            <li class="nav-item my-lg-0">
-              <a class="nav-link me-md-2" href="{% url 'logout' %}">Выйти</a>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'logout' %}">Выйти</a>
             </li>
             </ul>
             {% else %}
