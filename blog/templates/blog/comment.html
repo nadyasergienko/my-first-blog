@@ -3,8 +3,10 @@
         <p class="card-text">
             {{ comment.text|linebreaksbr }}        
         </p>
-        <a href="{% url 'comment_edit' pk=comment.pk %}">
-        <i class ="bi-pencil-square"></i> Редактировать</a>        
+        <a href="{% url 'comment_edit' pk=comment.pk %}" class="card-link">
+        <i class ="bi-pencil-square"></i> Редактировать</a>
+        <a href="{% url 'comment_delete' pk=comment.pk %}" class="card-link link-danger">
+            <i class ="bi bi-trash"></i> Удалить</a>            
         <p class="card-text">
             <small class="text-muted">
                 <i class="bi bi-clock"></i>
